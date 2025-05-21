@@ -10,15 +10,13 @@ namespace MyejemplClass09
     {
         //metodo para rectanguloo
         //para el circulo 
-        public double PerimetroRectangulo(double l, double a)
+        public void PerimetroRectangulo(double l, double a, ref double p)
         {
-            double r = (l * 2) + (a * 2);
-            return r;
+            p = 2 * (l + a);
         }
-        public double PerimetroDelCircule(double r)
+        public void PerimetroDelCircule(double r, ref double p)
         {
-            double a = 2 * Math.PI * r;
-            return a;
+            p = 2 * Math.PI * r;
         }
     }
 }
